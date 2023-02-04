@@ -1,0 +1,19 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialog {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.active {
+  text-decoration: none;
+  color: gold;
+}
+
+.dialog a {
+  color: inherit;
+}
