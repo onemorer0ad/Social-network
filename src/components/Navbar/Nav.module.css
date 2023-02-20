@@ -17,3 +17,26 @@
   text-decoration: none;
   color: gold;
 }
+
+.sidebar {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.sidebar__item {
+  margin-right: 10px;
+}
+
+.dialogImg {
+  margin-right: 10px;
+}
+
+.sidebar__img img {
+  border-radius: 25px;
+}

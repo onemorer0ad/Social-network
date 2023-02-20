@@ -1,0 +1,29 @@
+.dialog {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.dialogImg {
+  margin-right: 10px;
+}
+
+.dialogImg img {
+  border-radius: 25px;
+}
+
+.dialogLink {
+  color: #fff;
+}
+
+.dialogLink a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dialogLink a {
+  color: inherit;
+  text-decoration: none;
+}
