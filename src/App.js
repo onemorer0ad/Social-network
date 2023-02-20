@@ -21,8 +21,10 @@ const App = (props) => {
               element={
                 <Dialogs
                   dialogsData={props.state.dialogsPage.dialogsData}
+                  newMessagesText={props.state.dialogsPage.newMessagesText}
                   messages={props.state.dialogsPage.messages}
                   addMessage={props.addMessage}
+                  updateNewMessagesText={props.updateNewMessagesText}
                 />
               }
             />

@@ -32,17 +32,17 @@ let state = {
       { id: 4, name: "Леха" },
       { id: 5, name: "Василина" },
     ],
+    newMessagesText: "Сообщение номер 1",
   },
 };
 
 window.state = state;
-console.log(state);
 
 export let addPost = () => {
   let newPost = {
     id: 5,
     likesCount: 0,
-    messege: state.profilePage.newPostsText,
+    message: state.profilePage.newPostsText,
   };
   state.profilePage.posts.push(newPost);
   rerenderAll(state);
@@ -52,15 +52,19 @@ export let addPost = () => {
 export let addMessage = () => {
   let newMessage = {
     id: 5,
-    message: "yes good",
+    message: state.dialogsPage.newMessagesText,
   };
   state.dialogsPage.messages.push(newMessage);
-  console.log(newMessage);
   rerenderAll(state);
+  state.dialogsPage.newMessagesText = "";
 };
 
 export let updateNewPostText = (newText) => {
   state.profilePage.newPostsText = newText;
+  rerenderAll(state);
+};
+export let updateNewMessagesText = (newDialog) => {
+  state.dialogsPage.newMessagesText = newDialog;
   rerenderAll(state);
 };
 
